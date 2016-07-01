@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+.bg {
+  background-image: url('concert.jpg');
+  height: 1080px;
+}
