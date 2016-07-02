@@ -16,5 +16,12 @@ h1,h2,h3,h4,h5 {
 
 .bg {
   background-image: url('concert.jpg');
-  height: 1080px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  padding-bottom: 50%;
+
 }
