@@ -15,6 +15,6 @@ class UserSignupsController < ApplicationController
 
   private
     def new_user_params
-      params.require[:user_signup].permit(:email)
+      params.require(:user_signup).permit(:email)
     end
 end
