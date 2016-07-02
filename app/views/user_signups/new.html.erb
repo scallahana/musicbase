@@ -11,7 +11,7 @@
         track previews on by default.)</p>
       </div>
     <div class="email">
-      <%= bootstrap_form_for (@user_signup) do |f| %>
+      <%= form_for @user_signup do |f| %>
         <% if @user_signup.errors.any? %>
           <div id="error_explanation">
             <h2><%= pluralize(@user_signup.error.count, "error") %> Please fix these errors then try again:</h2>
@@ -27,7 +27,7 @@
         <h2 style="text-align: center; color: #fff;">Want to know when we launch?</h2>
         <div class="form">
           <p>
-            <%= f.email_field :email, placeholder: "example@gmail.com" %>
+            <%= f.text_field :email, placeholder: "example@gmail.com", :class => "form-control" %>
           </p>
           <p>
             <%= f.submit 'Signup for updates', :class => "btn btn-success"%>
@@ -36,7 +36,8 @@
       <% end %>
     </div>
     <footer class="footer">
-      <span>&copy; 2016 MusicBase, Background image from <a href="www.unsplash.com">Unsplash</a></span>
+      <span>&copy; 2016 MusicBase, Made with <i class="fa fa-heart" aria-hidden="true" id="heart"></i> in Denver, CO. <br>
+        Background image from <a href="www.unsplash.com">Unsplash</a></span>
     </footer>
   </div>
 </body>
