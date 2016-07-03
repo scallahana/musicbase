@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <body>
   <div class="bg" id="bg-img">
@@ -13,8 +13,8 @@
     <div class="email">
       <%= form_for @user_signup do |f| %>
         <% if @user_signup.errors.any? %>
-          <div id="error_explanation">
-            <h2><%= pluralize(@user_signup.error.count, "error") %> Please fix these errors then try again:</h2>
+          <div class="alert alert-danger">
+            <h2><%= pluralize(@user_signup.errors.count, "error") %> Please fix this error then try again:</h2>
 
             <ul>
               <% @user_signup.errors.full_messages.each do |msg| %>
@@ -25,13 +25,12 @@
         <% end %>
         <br>
         <h2 style="text-align: center; color: #fff;">Want to know when we launch?</h2>
-        <div class="form">
-          <p>
+        <div class="form-inline">
+          <div class="form-group">
             <%= f.text_field :email, placeholder: "example@gmail.com", :class => "form-control" %>
-          </p>
-          <p>
+          </div>
             <%= f.submit 'Signup for updates', :class => "btn btn-success"%>
-          </p>
+
         </div>
       <% end %>
     </div>
@@ -40,5 +39,6 @@
         Background image from <a href="www.unsplash.com">Unsplash</a></span>
     </footer>
   </div>
+ </div>
 </body>
 </html>
