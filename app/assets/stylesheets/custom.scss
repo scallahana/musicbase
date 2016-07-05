@@ -16,7 +16,7 @@ body {
 }
 .about {
   color: #fff;
-  padding: 3%;
+  padding: 0.2%;
   text-align: center;
   width: 60%;
   position: absolute;
@@ -32,7 +32,7 @@ body {
 }
 
 .more-detail {
-  padding: 7%;
+  padding: 4%;
   color: #fff;
   width: 60%;
   position: absolute;
@@ -48,6 +48,13 @@ body {
   background-position:50% 50% !important;
 }
 
+.spotify {
+  padding-top: 2%;
+  text-align: center;
+}
+.spotify h2 {
+  color: #fff;
+}
 #bg-img {
   background: url('concert.jpg') no-repeat 50% 50% fixed;
   background-size: 100% auto;
@@ -62,7 +69,7 @@ body {
   font-weight: 500;
 }
 .email {
-  padding-top: 16%;
+  padding-top: 7%;
   padding-left: 25%;
   padding-right: 25%;
   text-align: center;
